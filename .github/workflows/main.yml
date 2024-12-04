@@ -34,3 +34,18 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+  # This workflow contains a single job called "build"
+  notify:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    
+      uses: cinotify/github-action@main
+      with:
+        to: 'example@example.com'
+        subject: 'building main'
+        body: '<em>This is a notification from GitHub actions.</em>'
+        type: 'text/html'
