@@ -44,7 +44,7 @@ jobs:
   
       - uses: cinotify/github-action@main
         with:
-          to: 'example@example.com'
+          to: 'apacheco@fortinet.com'
           subject: 'building main'
           body: '<em>This is a notification from GitHub actions.</em>'
           type: 'text/html'
